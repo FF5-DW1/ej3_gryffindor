@@ -40,22 +40,9 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-color: rgb(63, 58, 58);
   background-image: url(/public/Image20230511121940.png);
   background-size: cover;
-  background-blend-mode: overlay;
-  background-color: #c9ad6d73;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 
@@ -76,17 +63,33 @@ body::before {
   -moz-box-shadow: 4px 4px 9px 0px rgba(44, 0, 0, 0.75); 
 
 }
+.todo-input{
+  outline: none;
+  background: none;
+  border: none;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 69%;
+  color: #000000;
+  font-family: MedievalSharp;
+  border-radius: 12px;
+  background-color: #ffffffc6;
+}
 
  .botonFormulario{
+  box-shadow: 4px 4px 9px 0px rgba(44, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 4px 9px 0px rgb(100, 0, 0);
+  -moz-box-shadow: 4px 4px 9px 0px rgba(44, 0, 0, 0.75);
+} 
+
+.botonEditar, .botonFormulario{
   background: #d1a000;
   font-family: MedievalSharp;
   border: none;
   padding: 1rem;
   border-radius: 12px;
   margin-left: 15px;
-  box-shadow: 4px 4px 9px 0px rgba(44, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 4px 9px 0px rgb(100, 0, 0);
-  -moz-box-shadow: 4px 4px 9px 0px rgba(44, 0, 0, 0.75);
 } 
 
 
@@ -127,6 +130,11 @@ body::before {
   .fa-pen-to-square {
     color: #c89623;
     cursor: pointer;
+  }
+
+  .check-icon{
+    margin-right: 10px;
+
   }
 
   @media (max-width: 600px) {

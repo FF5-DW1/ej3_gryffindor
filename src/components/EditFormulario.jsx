@@ -17,8 +17,8 @@ const EditFormulario = ({ editTodo, task }) => {
         className="todo-input"
         placeholder="Update task"
       />
-      <button type="submit" className="todo-btn">
-        Update Task
+      <button type="submit" className="botonEditar">
+        Editar
       </button>
     </form>
   );
